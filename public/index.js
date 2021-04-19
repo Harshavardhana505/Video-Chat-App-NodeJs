@@ -8,7 +8,7 @@ myvideo.muted = true;
 const peerConnections = {}
 navigator.mediaDevices.getUserMedia({
   video:true,
-  audio:false
+  audio:true
 }).then((stream)=>{
   myVideoStream = stream;
   addVideo(myvideo , stream);
