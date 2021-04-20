@@ -33,7 +33,7 @@ peer.on('error' , (err)=>{
   alert(err.type);
 });
 socket.on('userJoined' , id=>{
-  console.log("new user joined")
+  console.log("New user joined")
   const call  = peer.call(id , myVideoStream);
   const vid = document.createElement('video');
   call.on('error' , (err)=>{
